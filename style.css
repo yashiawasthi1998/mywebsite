@@ -537,7 +537,7 @@ h3{
 
 
 }
-@media(max-width:468px){
+@media(max-width:768px){
     #menu-icon{
         display: block;
         font-size: 30px;
@@ -629,4 +629,76 @@ h3{
     .contact form .input-box input{
         width: 100%;
     }
+}
+
+
+@media(max-width:468px){
+    #menu-icon{
+        display: block;
+        font-size: 30px;
+        color:white;
+
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 80%;
+        padding: 1rem 3%;
+        background: rgb(11, 95, 128);
+        border-top: .1rem solid rgba(0,0,0,.2);
+        box-shadow: 0.5rem .5rem rgba(0,0,0,.2);
+        display: none;
+    }
+    .navbar.active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .home{
+        flex-direction: column;
+    }
+    .home-content h3{
+     font-size: 2.6rem;
+    }
+    .home-content h1{
+        font-size: 5rem;
+    }
+    .home-content{
+        order: 2;
+    }
+    .home-img img{
+        width: 50%;
+        margin-top: 7rem;
+
+    }
+    .about{
+        flex-direction: column;
+    }
+    .container .skill .progressbar{
+        width: 50%;
+    }
+    .about .about-img img{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .services h2{
+        margin-bottom: 3rem;
+        height: 200px;
+    }
+    .servicecontainer .servicebox{
+        height: 350px;
+    }
+    .portfolio h2{
+        margin-bottom: 3rem;
+}
+.portfolio-container{
+        grid-template-columns: repeat(2,1fr);
+
+}
+
+
 }
